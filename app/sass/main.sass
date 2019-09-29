@@ -63,30 +63,54 @@ b, strong
 	background-size: cover
 	&-form
 		max-width: 480px
+		max-height: 570px
 		background-color: #ffffff
 		padding: 30px 50px
 		border-radius: 5px
 		margin-left: 50px
 		margin-top: 50px
 		&__title
+			margin-top: 20px
 			font-size: 30px
 			color: $accent
 			font-weight: bold
 		&__text
 			font-size: 18px
 			color: $text
+			margin-bottom: 40px
 		&__input
-			margin-top: 28px
+			margin-top: 40px
 
 .input
 	padding: 20px
 	width: 380px
 	border-radius: 5px
-	border-color: #D2D5DA
+	border: 1px solid #D2D5DA
 	font-size: 18px
+	outline: none
 	&:focus
 		border-color: $accent
 		box-shadow: 0 0 5px rgba($accent,0.5)
+
+.button
+	background-color: $accent
+	padding: 20px 40px
+	border-radius: 5px
+	border: none
+	outline: none
+	color: #ffffff
+	cursor: pointer
+	transition: background-color .15s ease-in-out
+	margin-top: 30px
+	&:hover
+		background-color: darken($accent, 10)
+	&:focus
+		outline: none
+
+.warning-text
+	font-size: 12px
+	display: inline-block
+	margin-top: 5px
 
 .nav
 	background-color: rgba(0, 0, 0, 0.8)
