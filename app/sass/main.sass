@@ -9,6 +9,83 @@
 	background-color: $accent
 	color: #fff
 
+.logo
+	color: #ffffff
+	text-transform: uppercase
+	font-size: 26px
+	font-weight: bold
+	margin-left: 50px
+
+.overlay
+	background-color: rgba(0, 0, 0, .5)
+	position: absolute
+	width: 100%
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+
+.header-content
+	position: relative
+
+.header
+	position: relative
+	background: url('../img/@1x/background-img.jpg') center no-repeat
+	height: 100vh
+	background-size: cover
+	&-form
+		max-width: 480px
+		background-color: #ffffff
+		padding: 30px 50px
+		border-radius: 5px
+		margin-left: 50px
+		margin-top: 50px
+		&__title
+			font-size: 30px
+			color: $accent
+			font-weight: bold
+.nav
+	background-color: rgba(0, 0, 0, 0.8)
+	height: 80px
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	&-list
+		color: #ffffff
+		margin-right: 50px
+		ul
+			list-style-type: none
+			display: flex
+			flex-direction: row
+			margin: 0
+			li
+				cursor: pointer
+				transition: color .15s ease-in-out
+				color: #DCDCDC
+				&:hover
+					color: white
+		&__divider
+			color: $accent
+			font-weight: bold
+			margin-left: 20px
+			margin-right: 20px
+
+.header-item
+	display: flex
+	align-items: center
+	height: 80vh
+	&__text
+		color: #ffffff
+		font-size: 28px
+
+.h1
+	color: #ffffff
+	font-size: 64px
+	font-weight: bold
+	line-height: 1.2
+	margin-bottom: 30px
+
 body
 	font-size: 16px
 	min-width: 320px
@@ -37,7 +114,5 @@ body
 
 b, strong
 	font-weight: bold
-
-
 
 @import "media" // Always at the end
