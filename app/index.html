@@ -10,6 +10,17 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Template Basic Images Start -->
+		<meta property="og:image" content="path/to/image.jpg" />
+		<!-- <link rel="stylesheet" href="./css/font-awesome.min.css"> -->
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="icon" href="img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon-180x180.png"
+    />
+    <!-- Template Basic Images End -->
 
   <!-- Template Basic Images Start -->
   <meta property="og:image" content="path/to/image.jpg" />
@@ -20,6 +31,8 @@
   <!-- Custom Browsers Color Start -->
   <meta name="theme-color" content="#000" />
   <!-- Custom Browsers Color End -->
+		<link rel="stylesheet" href="css/main.min.css" />
+  </head>
 
   <link rel="stylesheet" href="css/main.min.css" />
 </head>
@@ -69,12 +82,41 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="header-form">
-            <form action="">
-              <div class="row">
-                <div class="col-12">
-                  <div class="header-form__title">Отправьте заявку</div>
+            <div class="header-form">
+              <form action="">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="header-form__title">Отправьте заявку</div>
+                    <span class="header-form__text"
+                      >Наш менеджер свяжется с вами</span
+										>
+										<div class="header-form__input"></div>
+                    <label for="fio-input" class="input-label"
+                      >Фамилия Имя Отчество
+                      <input
+                        type="text"
+												class="input"
+												placeholder="Иванов Иван Иванович"
+                        id="fio-input"
+                      />
+                    </label>
+                    <label for="phone-input" class="input-label"
+                      >Номер телефона
+                      <input
+                        type="text"
+												class="input"
+												placeholder="+7 800 555 35 35"
+                        id="phone-input"
+                      />
+                    </label>
+                    <button class="button" type="submit">
+                      Отправить заявку
+                    </button>
+                    <span class="warning-text"></span>
+                      <span class="warning-icon"><i class="fas fa-exclamation-circle"></i></span> Отправляя заявку, вы
+                      соглашаетесь на обработку персональных данных.</span
+                    >
+                  </div>
                 </div>
               </div>
             </form>
@@ -175,4 +217,6 @@
   <script src="js/scripts.min.js"></script>
 </body>
 
+		<script src="js/scripts.min.js"></script>
+  </body>
 </html>
