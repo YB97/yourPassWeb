@@ -61,6 +61,7 @@ b, strong
 	background: url('../img/@1x/background-img.jpg') center no-repeat
 	height: 100vh
 	background-size: cover
+	min-height: 100vh
 	&-form
 		max-width: 480px
 		max-height: 570px
@@ -147,17 +148,36 @@ b, strong
 		color: #ffffff
 		font-size: 28px
 
+.title
+	color: $accent
+	font-size: 24px
+	position: relative
+	margin-bottom: 10px
+	h2
+		margin-bottom: 0
+	&::after, &::before
+		content: ''
+		background: $accent
+		display: inline-block
+		height: 2px
+		position: absolute
+		width: 55px
+		bottom: 0
+	&::before
+		bottom: -8px
+		transform: translateX(50%)
 .h1
 	color: #ffffff
 	font-size: 64px
 	font-weight: bold
 	line-height: 1.2
 	margin-bottom: 30px
+
 .features
 	display: block
 	width: 100%
-	position: absolute
-	transform: translateY(10%)
+	transform: translateY(-20%)
+
 .feature
 	display: flex
 	background: white
@@ -179,7 +199,6 @@ b, strong
 	&-text
 		display: block
 		margin-top: 20px
-		white-space: pre-line
 		text-align: center
 .demo
 	height: 400px
