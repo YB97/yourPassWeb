@@ -1,221 +1,444 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
 
-<head>
-  <meta charset="utf-8" />
-  <!-- <base href="/"> -->
+    <title>Ваш пропуск</title>
+    <meta name="description" content="" />
 
-  <title>Ваш пропуск</title>
-  <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg" />
+    <!-- <link rel="stylesheet" href="./css/font-awesome.min.css"> -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon-180x180.png"
+    />
+    <!-- Template Basic Images End -->
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <!-- Template Basic Images Start -->
-  <meta property="og:image" content="path/to/image.jpg" />
-  <!-- <link rel="stylesheet" href="./css/font-awesome.min.css"> -->
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-  <link rel="icon" href="img/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" />
-  <!-- Template Basic Images End -->
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg" />
+    <link rel="icon" href="img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon-180x180.png"
+    />
+    <!-- Template Basic Images End -->
 
-  <!-- Template Basic Images Start -->
-  <meta property="og:image" content="path/to/image.jpg" />
-  <link rel="icon" href="img/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" />
-  <!-- Template Basic Images End -->
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000" />
+    <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
 
-  <!-- Custom Browsers Color Start -->
-  <meta name="theme-color" content="#000" />
-  <!-- Custom Browsers Color End -->
-  <link rel="stylesheet" href="css/main.min.css" />
-</head>
-
-<body>
-  <!-- Custom HTML -->
-  <header class="header">
-    <div class="overlay"></div>
-    <div class="header-content">
-      <nav class="nav">
-        <div class="logo">
-          вашпропуск.рф
-        </div>
-        <div class="nav-list">
-          <ul>
-            <li>
-              Стоимость
-              <span class="nav-list__divider">/</span>
-            </li>
-            <li>
-              Необходимые документы
-              <span class="nav-list__divider">/</span>
-            </li>
-            <li>
-              Проверка пропуска
-              <span class="nav-list__divider">/</span>
-            </li>
-            <li>
-              Частые вопросы
-              <span class="nav-list__divider">/</span>
-            </li>
-            <li>Контакты</li>
-          </ul>
-        </div>
-      </nav>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="header-item">
-              <div>
-                <h1 class="h1">
-                  Грузовой пропуск в Москву
-                </h1>
-                <div class="header-item__text">
-                  Официально вносим в реестр <br />
-                  Пропуск в любую зону (СК, ТТК, МКАД)
-                </div>
-              </div>
-            </div>
+  <body>
+    <!-- Custom HTML -->
+    <header class="header">
+      <div class="overlay"></div>
+      <div class="header-content">
+        <nav class="nav">
+          <div class="logo">
+            вашпропуск.рф
           </div>
-          <div class="header-form">
-            <form action="">
-              <div class="row">
-                <div class="col-12">
-                  <div class="header-form__title">Отправьте заявку</div>
-                  <span class="header-form__text">Наш менеджер свяжется с вами</span>
-                  <div class="header-form__input">
-                    <label for="fio-input" class="input-label">Фамилия Имя Отчество
-                      <input type="text" class="input" placeholder="Иванов Иван Иванович" id="fio-input" />
-                    </label>
-                    <label for="phone-input" class="input-label">Номер телефона
-                      <input type="text" class="input" placeholder="+7 800 555 35 35" id="phone-input" />
-                    </label>
-                    <button class="button" type="submit">
-                      Отправить заявку
-                    </button>
-                    <span class="warning-text">
-                      <span class="warning-icon"><i class="fas fa-exclamation-circle"></i></span>
-                      Отправляя заявку, вы соглашаетесь на обработку
-                      персональных данных.
-                    </span>
+          <div class="nav-list">
+            <ul>
+              <li>
+                Стоимость
+                <span class="nav-list__divider">/</span>
+              </li>
+              <li>
+                Необходимые документы
+                <span class="nav-list__divider">/</span>
+              </li>
+              <li>
+                Проверка пропуска
+                <span class="nav-list__divider">/</span>
+              </li>
+              <li>
+                Частые вопросы
+                <span class="nav-list__divider">/</span>
+              </li>
+              <li>Контакты</li>
+            </ul>
+          </div>
+        </nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="header-item">
+                <div>
+                  <h1 class="h1">
+                    Грузовой пропуск в Москву
+                  </h1>
+                  <div class="header-item__text">
+                    Официально вносим в реестр <br />
+                    Пропуск в любую зону (СК, ТТК, МКАД)
                   </div>
                 </div>
               </div>
-            </form>
+            </div>
+            <div class="header-form">
+              <form action="">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="header-form__title">Отправьте заявку</div>
+                    <span class="header-form__text"
+                      >Наш менеджер свяжется с вами</span
+                    >
+                    <div class="header-form__input">
+                      <label for="fio-input" class="input-label"
+                        >Фамилия Имя Отчество
+                        <input
+                          type="text"
+                          class="input"
+                          placeholder="Иванов Иван Иванович"
+                          id="fio-input"
+                        />
+                      </label>
+                      <label for="phone-input" class="input-label"
+                        >Номер телефона
+                        <input
+                          type="text"
+                          class="input"
+                          placeholder="+7 800 555 35 35"
+                          id="phone-input"
+                        />
+                      </label>
+                      <button class="button" type="submit">
+                        Отправить заявку
+                      </button>
+                      <span class="warning-text">
+                        <span class="warning-icon"
+                          ><i class="fas fa-exclamation-circle"></i
+                        ></span>
+                        Отправляя заявку, вы соглашаетесь на обработку
+                        персональных данных.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-  <section class="features">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="feature">
-            <div class="feature-icon">
-              <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M23.5001 25.3977C20.9282 25.3977 18.8359 27.49 18.8359 30.0619C18.8359 31.3374 19.366 32.5707 20.2916 33.4484V37.6596C20.2916 39.4288 21.731 40.8681 23.5002 40.8681C25.2694 40.8681 26.7088 39.4288 26.7088 37.6596V33.4484C27.6339 32.5713 28.1644 31.3377 28.1644 30.0619C28.1642 27.49 26.0718 25.3977 23.5001 25.3977ZM25.1504 31.8129C24.7051 32.2325 24.4497 32.819 24.4497 33.4221V37.6596C24.4497 38.1833 24.0238 38.6092 23.5001 38.6092C22.9765 38.6092 22.5505 38.1833 22.5505 37.6596V33.4221C22.5505 32.8191 22.2951 32.2327 21.85 31.8132C21.3629 31.3539 21.0946 30.732 21.0946 30.0619C21.0946 28.7357 22.1737 27.6566 23.4999 27.6566C24.8261 27.6566 25.9052 28.7357 25.9052 30.0619C25.9054 30.732 25.6371 31.3539 25.1504 31.8129Z"
-                  fill="#4282F3" />
-                <path
-                  d="M37.1758 19.266H33.7878V10.2879C33.7878 4.61509 29.1726 0 23.5001 0C17.8274 0 13.2123 4.61509 13.2123 10.2879V19.266H9.8242C7.95586 19.266 6.43588 20.786 6.43588 22.6543V43.6116C6.43588 45.4799 7.95586 46.9999 9.8242 46.9999H37.1758C39.0442 46.9999 40.5641 45.4799 40.5641 43.6116V22.6544C40.5641 20.786 39.0442 19.266 37.1758 19.266ZM15.4711 10.2879C15.4711 5.86077 19.0728 2.25894 23.5 2.25894C27.9271 2.25894 31.5288 5.86077 31.5288 10.2879V19.266H15.4711V10.2879ZM38.3053 43.6117C38.3053 44.2344 37.7986 44.7411 37.1758 44.7411H9.8242C9.20145 44.7411 8.69473 44.2345 8.69473 43.6117V22.6544C8.69473 22.0316 9.20145 21.5249 9.8242 21.5249H37.1758C37.7986 21.5249 38.3053 22.0315 38.3053 22.6544V43.6117Z"
-                  fill="#4282F3" />
-              </svg>
-            </div>
-            <p class="feature-text">Никаких аннуляций, гарантия юридической чистоты!
-            </p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="feature">
-            <div class="feature-icon">
-              <svg width="41" height="49" viewBox="0 0 41 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M37.114 0H3.80926C1.93537 0 0.410828 1.52454 0.410828 3.39844V14.9531C0.410828 15.5788 0.918101 16.0859 1.54364 16.0859C2.16918 16.0859 2.67645 15.5788 2.67645 14.9531V3.39844C2.67645 2.7738 3.18463 2.26562 3.80926 2.26562H37.114C37.7386 2.26562 38.2468 2.7738 38.2468 3.39844V45.5391C38.2468 46.1637 37.7386 46.6719 37.114 46.6719H3.80926C3.18463 46.6719 2.67645 46.1637 2.67645 45.5391V24.5065C2.67645 23.8808 2.16918 23.3737 1.54364 23.3737C0.918101 23.3737 0.410828 23.8808 0.410828 24.5065V45.5391C0.410828 47.413 1.93537 48.9375 3.80926 48.9375H37.114C38.9879 48.9375 40.5124 47.413 40.5124 45.5391V3.39844C40.5124 1.52454 38.9879 0 37.114 0Z"
-                  fill="#4285F4" />
-                <path
-                  d="M2.34442 19.2238C2.13384 19.0131 1.84157 18.893 1.54364 18.893C1.24571 18.893 0.953445 19.0131 0.742742 19.2238C0.531925 19.4356 0.410828 19.7279 0.410828 20.0247C0.410828 20.3237 0.532039 20.6149 0.742742 20.8267C0.953445 21.0374 1.24571 21.1586 1.54364 21.1586C1.84146 21.1586 2.13372 21.0374 2.34442 20.8267C2.55524 20.616 2.67645 20.3237 2.67645 20.0247C2.67645 19.7268 2.55513 19.4356 2.34442 19.2238Z"
-                  fill="#4285F4" />
-                <path
-                  d="M18.7624 8.38281H7.88739C7.26185 8.38281 6.75458 8.88997 6.75458 9.51562V20.3906C6.75458 21.0163 7.26185 21.5234 7.88739 21.5234H18.7624C19.3879 21.5234 19.8952 21.0163 19.8952 20.3906V9.51562C19.8952 8.88997 19.3879 8.38281 18.7624 8.38281ZM17.6296 19.2578H9.0202V10.6484H17.6296V19.2578Z"
-                  fill="#4285F4" />
-                <path
-                  d="M15.1174 26.6666C14.675 26.2244 13.9579 26.2243 13.5153 26.6666L10.504 29.678L9.1038 28.2777C8.66144 27.8354 7.94437 27.8355 7.50166 28.2777C7.0593 28.7201 7.0593 29.4374 7.50166 29.8797L9.70294 32.081C9.91546 32.2934 10.2035 32.4128 10.504 32.4128C10.8045 32.4128 11.0925 32.2934 11.3051 32.081L15.1174 28.2687C15.5598 27.8263 15.5598 27.109 15.1174 26.6666Z"
-                  fill="#4285F4" />
-                <path
-                  d="M33.6778 28.207H20.4616C19.8361 28.207 19.3288 28.7142 19.3288 29.3398C19.3288 29.9655 19.8361 30.4727 20.4616 30.4727H33.6778C34.3033 30.4727 34.8106 29.9655 34.8106 29.3398C34.8106 28.7142 34.3033 28.207 33.6778 28.207Z"
-                  fill="#4285F4" />
-                <path
-                  d="M15.1174 35.3176C14.675 34.8753 13.9579 34.8752 13.5153 35.3176L10.504 38.3289L9.1038 36.9287C8.66144 36.4863 7.94437 36.4864 7.50166 36.9287C7.0593 37.371 7.0593 38.0883 7.50166 38.5307L9.70294 40.732C9.91546 40.9444 10.2035 41.0638 10.504 41.0638C10.8045 41.0638 11.0925 40.9444 11.3051 40.732L15.1174 36.9196C15.5598 36.4772 15.5598 35.7599 15.1174 35.3176Z"
-                  fill="#4285F4" />
-                <path
-                  d="M33.6778 36.8164H20.4616C19.8361 36.8164 19.3288 37.3236 19.3288 37.9492C19.3288 38.5749 19.8361 39.082 20.4616 39.082H33.6778C34.3033 39.082 34.8106 38.5749 34.8106 37.9492C34.8106 37.3236 34.3033 36.8164 33.6778 36.8164Z"
-                  fill="#4285F4" />
-              </svg>
-            </div>
-            <p class="feature-text">Оформляем на вашу или нашу фирму.</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="feature">
-            <div class="feature-icon">
-              <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0)">
+    </header>
+    <section class="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="feature">
+              <div class="feature-icon">
+                <svg
+                  width="47"
+                  height="47"
+                  viewBox="0 0 47 47"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
-                    d="M43.055 9.92115L24.6386 0.107972C24.3654 -0.0378447 24.038 -0.0357983 23.7668 0.113088L5.86004 9.92627C5.56636 10.0874 5.38422 10.3954 5.38422 10.7306V23.5491C5.39496 34.0862 11.6379 43.619 21.2925 47.8405L23.778 48.9237C24.0103 49.025 24.2748 49.0255 24.5076 48.9247L27.3083 47.7152C37.142 43.5853 43.5395 33.9604 43.5405 23.2948V10.7306C43.5405 10.3919 43.3537 10.0803 43.055 9.92115ZM41.7068 23.2948C41.7047 33.2252 35.7467 42.1854 26.5905 46.0283L26.5844 46.0314L24.1454 47.0844L22.0262 46.1598C13.0393 42.2305 7.22764 33.3577 7.21741 23.5491V11.2734L24.2134 1.95856L41.7068 11.2801V23.2948Z"
-                    fill="#4285F4" />
+                    d="M23.5001 25.3977C20.9282 25.3977 18.8359 27.49 18.8359 30.0619C18.8359 31.3374 19.366 32.5707 20.2916 33.4484V37.6596C20.2916 39.4288 21.731 40.8681 23.5002 40.8681C25.2694 40.8681 26.7088 39.4288 26.7088 37.6596V33.4484C27.6339 32.5713 28.1644 31.3377 28.1644 30.0619C28.1642 27.49 26.0718 25.3977 23.5001 25.3977ZM25.1504 31.8129C24.7051 32.2325 24.4497 32.819 24.4497 33.4221V37.6596C24.4497 38.1833 24.0238 38.6092 23.5001 38.6092C22.9765 38.6092 22.5505 38.1833 22.5505 37.6596V33.4221C22.5505 32.8191 22.2951 32.2327 21.85 31.8132C21.3629 31.3539 21.0946 30.732 21.0946 30.0619C21.0946 28.7357 22.1737 27.6566 23.4999 27.6566C24.8261 27.6566 25.9052 28.7357 25.9052 30.0619C25.9054 30.732 25.6371 31.3539 25.1504 31.8129Z"
+                    fill="#4282F3"
+                  />
                   <path
-                    d="M17.4492 22.9546C17.1202 22.5693 16.5415 22.5238 16.1563 22.8528C15.771 23.1812 15.7255 23.7604 16.0544 24.1451L20.8976 29.8166C21.2209 30.1952 21.7873 30.2469 22.1731 29.9328L33.4526 20.7561C33.8456 20.4368 33.9049 19.8592 33.5851 19.4662C33.2659 19.0738 32.6882 19.014 32.2953 19.3337L21.7106 27.9446L17.4492 22.9546Z"
-                    fill="#4285F4" />
-                </g>
-                <defs>
-                  <clipPath id="clip0">
-                    <rect width="49" height="49" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
+                    d="M37.1758 19.266H33.7878V10.2879C33.7878 4.61509 29.1726 0 23.5001 0C17.8274 0 13.2123 4.61509 13.2123 10.2879V19.266H9.8242C7.95586 19.266 6.43588 20.786 6.43588 22.6543V43.6116C6.43588 45.4799 7.95586 46.9999 9.8242 46.9999H37.1758C39.0442 46.9999 40.5641 45.4799 40.5641 43.6116V22.6544C40.5641 20.786 39.0442 19.266 37.1758 19.266ZM15.4711 10.2879C15.4711 5.86077 19.0728 2.25894 23.5 2.25894C27.9271 2.25894 31.5288 5.86077 31.5288 10.2879V19.266H15.4711V10.2879ZM38.3053 43.6117C38.3053 44.2344 37.7986 44.7411 37.1758 44.7411H9.8242C9.20145 44.7411 8.69473 44.2345 8.69473 43.6117V22.6544C8.69473 22.0316 9.20145 21.5249 9.8242 21.5249H37.1758C37.7986 21.5249 38.3053 22.0315 38.3053 22.6544V43.6117Z"
+                    fill="#4282F3"
+                  />
+                </svg>
+              </div>
+              <p class="feature-text">
+                Никаких аннуляций, гарантия юридической чистоты!
+              </p>
             </div>
-            <p class="feature-text">
-              Вы платите только после внесения пропуска в реестр!
-            </p>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="feature">
-            <div class="feature-icon">
-              <svg width="59" height="49" viewBox="0 0 59 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M58.0969 11.0541C57.4088 10.1693 56.5241 9.6778 55.4427 9.57953L53.0834 9.29361V6.53208V4.5661C53.0834 2.40348 51.314 0.634033 49.1514 0.634033H3.93207C1.76945 0.633918 0 2.40337 0 4.5661V6.53219V14.3964V36.023C0 37.7985 1.19311 39.3082 2.81695 39.792C2.76741 41.7806 4.27202 43.507 6.29145 43.6906L51.7073 48.8023C51.8055 48.8023 52.0022 48.8023 52.1004 48.8023C54.0665 48.8023 55.836 47.3277 56.0325 45.46L58.9816 13.9049C59.0798 12.9218 58.7849 11.8404 58.0969 11.0541ZM1.96609 7.51518H51.1174V10.0711V13.4133H1.96609V7.51518ZM3.93207 2.60001H49.1512C50.2326 2.60001 51.1173 3.48473 51.1173 4.5661V5.54909H1.96609V4.5661C1.96609 3.48473 2.85081 2.60001 3.93207 2.60001ZM1.96609 36.0229V15.3793H51.1174V36.0229C51.1174 37.1042 50.2327 37.989 49.1514 37.989H4.03045H3.93218C2.85081 37.989 1.96609 37.1042 1.96609 36.0229ZM57.0155 13.5116L54.0664 45.0667C53.9681 46.1481 52.985 46.9345 51.9038 46.8362L6.58624 41.7245C5.60325 41.6262 4.91505 40.8398 4.81679 39.955H49.1512C51.3139 39.955 53.0833 38.1856 53.0833 36.023V14.3963V11.1523L55.3443 11.349C55.8359 11.349 56.3273 11.6439 56.6222 12.0371C56.9172 12.4302 57.1139 13.02 57.0155 13.5116Z"
-                  fill="#4285F4" />
-              </svg>
+          <div class="col-md-3">
+            <div class="feature">
+              <div class="feature-icon">
+                <svg
+                  width="41"
+                  height="49"
+                  viewBox="0 0 41 49"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M37.114 0H3.80926C1.93537 0 0.410828 1.52454 0.410828 3.39844V14.9531C0.410828 15.5788 0.918101 16.0859 1.54364 16.0859C2.16918 16.0859 2.67645 15.5788 2.67645 14.9531V3.39844C2.67645 2.7738 3.18463 2.26562 3.80926 2.26562H37.114C37.7386 2.26562 38.2468 2.7738 38.2468 3.39844V45.5391C38.2468 46.1637 37.7386 46.6719 37.114 46.6719H3.80926C3.18463 46.6719 2.67645 46.1637 2.67645 45.5391V24.5065C2.67645 23.8808 2.16918 23.3737 1.54364 23.3737C0.918101 23.3737 0.410828 23.8808 0.410828 24.5065V45.5391C0.410828 47.413 1.93537 48.9375 3.80926 48.9375H37.114C38.9879 48.9375 40.5124 47.413 40.5124 45.5391V3.39844C40.5124 1.52454 38.9879 0 37.114 0Z"
+                    fill="#4285F4"
+                  />
+                  <path
+                    d="M2.34442 19.2238C2.13384 19.0131 1.84157 18.893 1.54364 18.893C1.24571 18.893 0.953445 19.0131 0.742742 19.2238C0.531925 19.4356 0.410828 19.7279 0.410828 20.0247C0.410828 20.3237 0.532039 20.6149 0.742742 20.8267C0.953445 21.0374 1.24571 21.1586 1.54364 21.1586C1.84146 21.1586 2.13372 21.0374 2.34442 20.8267C2.55524 20.616 2.67645 20.3237 2.67645 20.0247C2.67645 19.7268 2.55513 19.4356 2.34442 19.2238Z"
+                    fill="#4285F4"
+                  />
+                  <path
+                    d="M18.7624 8.38281H7.88739C7.26185 8.38281 6.75458 8.88997 6.75458 9.51562V20.3906C6.75458 21.0163 7.26185 21.5234 7.88739 21.5234H18.7624C19.3879 21.5234 19.8952 21.0163 19.8952 20.3906V9.51562C19.8952 8.88997 19.3879 8.38281 18.7624 8.38281ZM17.6296 19.2578H9.0202V10.6484H17.6296V19.2578Z"
+                    fill="#4285F4"
+                  />
+                  <path
+                    d="M15.1174 26.6666C14.675 26.2244 13.9579 26.2243 13.5153 26.6666L10.504 29.678L9.1038 28.2777C8.66144 27.8354 7.94437 27.8355 7.50166 28.2777C7.0593 28.7201 7.0593 29.4374 7.50166 29.8797L9.70294 32.081C9.91546 32.2934 10.2035 32.4128 10.504 32.4128C10.8045 32.4128 11.0925 32.2934 11.3051 32.081L15.1174 28.2687C15.5598 27.8263 15.5598 27.109 15.1174 26.6666Z"
+                    fill="#4285F4"
+                  />
+                  <path
+                    d="M33.6778 28.207H20.4616C19.8361 28.207 19.3288 28.7142 19.3288 29.3398C19.3288 29.9655 19.8361 30.4727 20.4616 30.4727H33.6778C34.3033 30.4727 34.8106 29.9655 34.8106 29.3398C34.8106 28.7142 34.3033 28.207 33.6778 28.207Z"
+                    fill="#4285F4"
+                  />
+                  <path
+                    d="M15.1174 35.3176C14.675 34.8753 13.9579 34.8752 13.5153 35.3176L10.504 38.3289L9.1038 36.9287C8.66144 36.4863 7.94437 36.4864 7.50166 36.9287C7.0593 37.371 7.0593 38.0883 7.50166 38.5307L9.70294 40.732C9.91546 40.9444 10.2035 41.0638 10.504 41.0638C10.8045 41.0638 11.0925 40.9444 11.3051 40.732L15.1174 36.9196C15.5598 36.4772 15.5598 35.7599 15.1174 35.3176Z"
+                    fill="#4285F4"
+                  />
+                  <path
+                    d="M33.6778 36.8164H20.4616C19.8361 36.8164 19.3288 37.3236 19.3288 37.9492C19.3288 38.5749 19.8361 39.082 20.4616 39.082H33.6778C34.3033 39.082 34.8106 38.5749 34.8106 37.9492C34.8106 37.3236 34.3033 36.8164 33.6778 36.8164Z"
+                    fill="#4285F4"
+                  />
+                </svg>
+              </div>
+              <p class="feature-text">Оформляем на вашу или нашу фирму.</p>
             </div>
-            <p class="feature-text">Любые виды оплаты. <br> Мы принимаем оплату наличными и на расчётный счёт в
-              банке
-            </p>
+          </div>
+          <div class="col-md-3">
+            <div class="feature">
+              <div class="feature-icon">
+                <svg
+                  width="49"
+                  height="49"
+                  viewBox="0 0 49 49"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0)">
+                    <path
+                      d="M43.055 9.92115L24.6386 0.107972C24.3654 -0.0378447 24.038 -0.0357983 23.7668 0.113088L5.86004 9.92627C5.56636 10.0874 5.38422 10.3954 5.38422 10.7306V23.5491C5.39496 34.0862 11.6379 43.619 21.2925 47.8405L23.778 48.9237C24.0103 49.025 24.2748 49.0255 24.5076 48.9247L27.3083 47.7152C37.142 43.5853 43.5395 33.9604 43.5405 23.2948V10.7306C43.5405 10.3919 43.3537 10.0803 43.055 9.92115ZM41.7068 23.2948C41.7047 33.2252 35.7467 42.1854 26.5905 46.0283L26.5844 46.0314L24.1454 47.0844L22.0262 46.1598C13.0393 42.2305 7.22764 33.3577 7.21741 23.5491V11.2734L24.2134 1.95856L41.7068 11.2801V23.2948Z"
+                      fill="#4285F4"
+                    />
+                    <path
+                      d="M17.4492 22.9546C17.1202 22.5693 16.5415 22.5238 16.1563 22.8528C15.771 23.1812 15.7255 23.7604 16.0544 24.1451L20.8976 29.8166C21.2209 30.1952 21.7873 30.2469 22.1731 29.9328L33.4526 20.7561C33.8456 20.4368 33.9049 19.8592 33.5851 19.4662C33.2659 19.0738 32.6882 19.014 32.2953 19.3337L21.7106 27.9446L17.4492 22.9546Z"
+                      fill="#4285F4"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0">
+                      <rect width="49" height="49" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p class="feature-text">
+                Вы платите только после внесения пропуска в реестр!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="feature">
+              <div class="feature-icon">
+                <svg
+                  width="59"
+                  height="49"
+                  viewBox="0 0 59 49"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M58.0969 11.0541C57.4088 10.1693 56.5241 9.6778 55.4427 9.57953L53.0834 9.29361V6.53208V4.5661C53.0834 2.40348 51.314 0.634033 49.1514 0.634033H3.93207C1.76945 0.633918 0 2.40337 0 4.5661V6.53219V14.3964V36.023C0 37.7985 1.19311 39.3082 2.81695 39.792C2.76741 41.7806 4.27202 43.507 6.29145 43.6906L51.7073 48.8023C51.8055 48.8023 52.0022 48.8023 52.1004 48.8023C54.0665 48.8023 55.836 47.3277 56.0325 45.46L58.9816 13.9049C59.0798 12.9218 58.7849 11.8404 58.0969 11.0541ZM1.96609 7.51518H51.1174V10.0711V13.4133H1.96609V7.51518ZM3.93207 2.60001H49.1512C50.2326 2.60001 51.1173 3.48473 51.1173 4.5661V5.54909H1.96609V4.5661C1.96609 3.48473 2.85081 2.60001 3.93207 2.60001ZM1.96609 36.0229V15.3793H51.1174V36.0229C51.1174 37.1042 50.2327 37.989 49.1514 37.989H4.03045H3.93218C2.85081 37.989 1.96609 37.1042 1.96609 36.0229ZM57.0155 13.5116L54.0664 45.0667C53.9681 46.1481 52.985 46.9345 51.9038 46.8362L6.58624 41.7245C5.60325 41.6262 4.91505 40.8398 4.81679 39.955H49.1512C51.3139 39.955 53.0833 38.1856 53.0833 36.023V14.3963V11.1523L55.3443 11.349C55.8359 11.349 56.3273 11.6439 56.6222 12.0371C56.9172 12.4302 57.1139 13.02 57.0155 13.5116Z"
+                    fill="#4285F4"
+                  />
+                </svg>
+              </div>
+              <p class="feature-text">
+                Любые виды оплаты. <br />
+                Мы принимаем оплату наличными и на расчётный счёт в банке
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="cost">
-    <div class="container">
-      <div class="title cost__title">
-        <h2>Стоимость</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <div class="card">
-            sda
+    </section>
+    <section class="cost">
+      <div class="container">
+        <div class="title cost__title">
+          <h2>Стоимость</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="card">
+              sda
+            </div>
+          </div>
+          <div class="col-md-5 offset-2">
+            dsa
           </div>
         </div>
-        <div class="col-md-5 offset-2">
-          dsa
+      </div>
+    </section>
+
+    <section class="documents">
+      <div class="container">
+        <div class="title">
+          <h2>Какие документы нам нужны</h2>
+        </div>
+        <div class="row mt-60">
+          <div class="col-md-3 documents__item">
+            <div class="documents__wrapper">
+              <div class="documents-wrapper">
+                <img
+                  src="../img/@1x/pts.png"
+                  alt=""
+                  class="documents-wrapper__img img-responsive"
+                />
+              </div>
+            </div>
+            <span class="documents__text"
+              >Паспорт транспортного средства (ПТС)</span
+            >
+          </div>
+          <div class="col-md-3 documents__item">
+            <div class="documents__wrapper">
+              <div class="documents-wrapper">
+                <img
+                  src="../img/@1x/sts.png"
+                  alt=""
+                  class="documents__img img-responsive"
+                />
+              </div>
+            </div>
+            <span class="documents__text"
+              >Свидетельство о регистрации ТС (СТС)</span
+            >
+          </div>
+          <div class="col-md-3 documents__item">
+            <div class="documents__wrapper">
+              <div class="documents-wrapper">
+                <img
+                  src="../img/@1x/diag-card.png"
+                  alt=""
+                  class="documents__img img-responsive"
+                />
+              </div>
+            </div>
+            <span class="documents__text">Диагностическая карта</span>
+          </div>
+          <div class="col-md-3 documents__item">
+            <div class="documents__wrapper">
+              <div class="documents-wrapper">
+                <img
+                  src="../img/@1x/driving-licence.png"
+                  alt=""
+                  class="documents__img img-responsive"
+                />
+              </div>
+            </div>
+            <span class="documents__text">Водительское удостоверение</span>
+          </div>
+        </div>
+        <div class="row mt-60">
+          <div class="col-md-4 documents__item">
+            <div class="documents__wrapper">
+              <div class="documents-wrapper">
+                <img
+                  src="../img/@1x/organization.png"
+                  alt=""
+                  class="documents-wrapper__img img-responsive"
+                />
+              </div>
+            </div>
+            <span class="documents__text"
+              >Карта огранизации <b>(для юридических фирм)</b></span
+            >
+          </div>
+          <div class="col-md-4 documents__item">
+            <div class="documents__wrapper">
+              <div class="documents-wrapper">
+                <img
+                  src="../img/@1x/passport.png"
+                  alt=""
+                  class="documents-wrapper__img img-responsive"
+                />
+              </div>
+            </div>
+            <span class="documents__text"
+              >Паспорт собственника (если автомобиль в
+              <b>частной собственности</b>)</span
+            >
+          </div>
+          <div class="col-md-4 documents__item">
+            <div class="documents__wrapper">
+              <div class="documents-wrapper">
+                <img
+                  src="../img/@1x/lizing.png"
+                  alt=""
+                  class="documents-wrapper__img img-responsive"
+                />
+              </div>
+            </div>
+            <span class="documents__text"
+              >Договор лизинга (если машина в <b>лизинге</b>)</span
+            >
+          </div>
         </div>
       </div>
-  </section>
-  <section class="demo"></section>
+    </section>
 
-  <script src="js/scripts.min.js"></script>
-</body>
+    <section class="order">
+      <div class="container ">
+        <div class="overlay overlay-dark"></div>
+        <div class="order-wrapper">
+          <div class="title title-white ">
+            <h2 class="order__title">Какие документы нам нужны</h2>
+          </div>
+          <div class="order__text">
+            <span> Временный пропуск на 5 дней сделаем за 1 день!</span>
+          </div>
+          <div class="order-form__input">
+            <div class="row">
+              <div class="col-md-4">
+                <label
+                  for="order-fio-input"
+                  class="input-label input-label--white"
+                  >Фамилия Имя Отчество
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Иванов Иван Иванович"
+                    id="order-fio-input"
+                  />
+                </label>
+              </div>
+              <div class="col-md-4">
+                <label
+                  for="order-phone-input"
+                  class="input-label input-label--white"
+                  >Номер телефона
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="+7 800 555 35 35"
+                    id="order-phone-input"
+                  />
+                </label>
+              </div>
+              <button class="button button--white" type="submit">
+                Отправить заявку
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="demo"></section>
+
+    <script src="js/scripts.min.js"></script>
+  </body>
 </html>
