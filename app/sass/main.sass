@@ -52,6 +52,8 @@ b, strong
 	right: 0
 	left: 0
 	bottom: 0
+	&-dark
+		background-color: rgba(0, 0, 0, .8)
 
 .header-content
 	position: relative
@@ -166,6 +168,10 @@ b, strong
 	&::before
 		bottom: -8px
 		transform: translateX(50%)
+	&-white
+		color: white
+		&::after, &::before
+			background: white
 .h1
 	color: #ffffff
 	font-size: 64px
@@ -200,6 +206,48 @@ b, strong
 		display: block
 		margin-top: 20px
 		text-align: center
+
+.documents
+	margin-top: 70px
+	&__item
+		display: flex
+		flex-direction: column
+	&__wrapper
+		position: relative
+		min-height: 160px
+	&-wrapper
+		position: absolute
+		left: 50%
+		transform: translateX(-50%) translateY(-50%)
+		top: 50px
+	&__text
+		text-align: center
+		align-items: center
+
+.order
+	position: relative
+	background: url('../img/@1x/bg-2.png') center no-repeat
+	background-size: cover
+	min-height: 370px
+	margin-top: 70px
+	padding-top: 10px
+	&__title
+		margin-top: 45px
+	&__text
+		position: relative
+		color: white
+		font-size: 20px
+		margin-top: 20px
+	&-wrapper
+		position: relative
+
+.input-label
+	&--white
+		color: #fff
+
+.mt-60
+	margin-top: 60px
+
 .demo
 	height: 400px
 
