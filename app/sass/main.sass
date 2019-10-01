@@ -86,7 +86,7 @@ b, strong
 
 .input
 	padding: 20px
-	width: 380px
+	width: 100%
 	border-radius: 5px
 	border: 1px solid #D2D5DA
 	font-size: 18px
@@ -97,18 +97,24 @@ b, strong
 
 .button
 	background-color: $accent
-	padding: 20px 40px
+	padding: 21px 40px
 	border-radius: 5px
 	border: none
 	outline: none
 	color: #ffffff
 	cursor: pointer
 	transition: background-color .15s ease-in-out
-	margin-top: 30px
 	&:hover
 		background-color: darken($accent, 10)
 	&:focus
 		outline: none
+	&--white
+		background-color: transparent
+		border: 1px solid #fff
+		transition: border-color .15s ease-in-out
+		&:hover
+			background-color: transparent
+			border-color: $accent
 
 .warning-text
 	font-size: 12px
@@ -231,6 +237,12 @@ b, strong
 	min-height: 370px
 	margin-top: 70px
 	padding-top: 10px
+	&-form
+		&__input
+			display: flex
+		&__wrapper
+			align-items: flex-end
+			margin-top: 30px
 	&__title
 		margin-top: 45px
 	&__text
@@ -244,6 +256,7 @@ b, strong
 .input-label
 	&--white
 		color: #fff
+		margin-bottom: 0
 
 .mt-60
 	margin-top: 60px
