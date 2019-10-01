@@ -103,6 +103,7 @@ b, strong
 	outline: none
 	color: #ffffff
 	cursor: pointer
+	white-space: nowrap
 	transition: background-color .15s ease-in-out
 	&:hover
 		background-color: darken($accent, 10)
@@ -342,28 +343,62 @@ b, strong
 	justify-content: center
 	align-items: center
 .service
-	padding: 20px
+	position: relative
+	padding: 30px 45px
 	background: linear-gradient(180deg, rgba(108, 107, 254, 0.72) 0%, rgba(66, 133, 244, 0.8) 100%)
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25)
 	border-radius: 5px
+	min-height: 400px
 	&__title
+		display: flex
+		align-items: center
 		color: white
 		font-size: 20px
+		min-height: 60px
+		margin-bottom: 20px
 	&-list
 		list-style-type: none
 		margin: 0
 		padding: 0
+		margin-bottom: 20px
 	&-cost
 		display: block
+		position: absolute
+		bottom: 120px
+		left: 50%
+		transform: translateX(-50%)
 		text-align: center
 		color: white
 		font-weight: 300
 		font-size: 30px
 	&__item
 		color: white
+		display: block
+		margin-top: 10px
 	&__button
 		display: flex
+		position: absolute
+		bottom: 20px
+		left: 50%
+		transform: translateX(-50%)
 		justify-content: center
+.faq
+	margin-top: 30px
+	&-arrow
+		&--rotate
+			transform: rotateX(180deg)
+	&-item
+		display: flex
+		justify-content: space-between
+		padding: 30px 50px
+		margin-bottom: -1px
+		font-weight: bold
+		font-size: 20px
+		border-top: 1px solid #D9D9D9
+		border-bottom: 1px solid #D9D9D9
+		transition: color .1s ease-in
+		&:hover
+			color: $accent
 
 .request
 	position: relative
@@ -433,5 +468,13 @@ b, strong
 .phone
 	color: #ffffff
 	font-size: 36px
+.faq-content
+	display: none
+	padding: 30px 0px 20px 10px
+	p
+		line-height: 1.7
+		font-size: 17px
+.demo
+	height: 400px
 
 	@import "media" // Always at the end
