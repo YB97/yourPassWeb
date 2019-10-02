@@ -31,11 +31,44 @@
 	&.img-width
 		width: 100%
 
+section
+	margin-top: 60px
+
 .text-center
 	text-align: center
 
 b, strong
 	font-weight: bold
+
+.title
+	color: $accent
+	font-size: 24px
+	position: relative
+	margin-bottom: 35px
+	h2
+		margin-bottom: 0
+	&::after, &::before
+		content: ''
+		background: $accent
+		display: inline-block
+		height: 2px
+		position: absolute
+		width: 55px
+		bottom: 0
+	&::before
+		bottom: -8px
+		transform: translateX(50%)
+	&-white
+		color: white
+		&::after, &::before
+			background: white
+.h1
+	color: #ffffff
+	font-size: 56px
+	font-weight: bold
+	white-space: pre-line
+	line-height: 1.2
+	margin-bottom: 60px
 
 .logo
 	color: #ffffff
@@ -65,24 +98,24 @@ b, strong
 	background-size: cover
 	min-height: 100vh
 	&-form
-		max-width: 480px
-		max-height: 570px
+		display: block
+		margin-top: 40px
 		background-color: #ffffff
-		padding: 30px 50px
+		padding: 30px 45px 50px 45px
 		border-radius: 5px
-		margin-left: 50px
-		margin-top: 50px
 		&__title
-			margin-top: 20px
-			font-size: 30px
-			color: $accent
-			font-weight: bold
+			display: block
+			margin-bottom: 20px
 		&__text
-			font-size: 18px
+			display: block
+			font-size: 20px
 			color: $text
 			margin-bottom: 40px
 		&__input
-			margin-top: 40px
+			margin-top: 12px
+		&__button
+			display: block
+			margin-top: 20px
 
 .input
 	padding: 20px
@@ -91,6 +124,9 @@ b, strong
 	border: 1px solid #D2D5DA
 	font-size: 18px
 	outline: none
+	&-label
+		display: block
+		width: 100%
 	&:focus
 		border-color: $accent
 		box-shadow: 0 0 5px rgba($accent,0.5)
@@ -111,11 +147,12 @@ b, strong
 		outline: none
 	&--white
 		background-color: transparent
-		border: 1px solid #fff
+		color: white
+		border: 1px solid #dddddd
 		transition: border-color .15s ease-in-out
 		&:hover
 			background-color: transparent
-			border-color: $accent
+			border-color: white
 
 .warning-text
 	font-size: 12px
@@ -161,41 +198,14 @@ b, strong
 	height: 80vh
 	&__text
 		color: #ffffff
+		white-space: pre-line
 		font-size: 28px
-
-.title
-	color: $accent
-	font-size: 24px
-	position: relative
-	margin-bottom: 35px
-	h2
-		margin-bottom: 0
-	&::after, &::before
-		content: ''
-		background: $accent
-		display: inline-block
-		height: 2px
-		position: absolute
-		width: 55px
-		bottom: 0
-	&::before
-		bottom: -8px
-		transform: translateX(50%)
-	&-white
-		color: white
-		&::after, &::before
-			background: white
-.h1
-	color: #ffffff
-	font-size: 64px
-	font-weight: bold
-	line-height: 1.2
-	margin-bottom: 30px
 
 .features
 	display: block
+	margin-top: 0
 	width: 100%
-	transform: translateY(-20%)
+	transform: translateY(-10%)
 
 .feature
 	display: flex
@@ -221,7 +231,6 @@ b, strong
 		text-align: center
 
 .documents
-	margin-top: 70px
 	&__item
 		display: flex
 		flex-direction: column
@@ -234,24 +243,23 @@ b, strong
 		transform: translateX(-50%) translateY(-50%)
 		top: 50px
 	&__text
+		display: block
+		font-size: 18px
 		text-align: center
-		align-items: center
 
 .order
+	display: block
+	padding-top: 50px
 	position: relative
 	background: url('../img/@1x/bg-2.png') center no-repeat
 	background-size: cover
 	min-height: 370px
-	margin-top: 70px
-	padding-top: 10px
 	&-form
 		&__input
 			display: flex
 		&__wrapper
 			align-items: flex-end
 			margin-top: 30px
-	&__title
-		margin-top: 45px
 	&__text
 		position: relative
 		color: white
@@ -277,11 +285,10 @@ b, strong
 	border-radius: 5px
 	background: #FFFFFF
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.28)
-	padding-bottom: 10px
-	min-height: 580px
+	min-height: 630px
 	&-title
 		display: block
-		font-size: 20px
+		font-size: 24px
 		padding: 22px 0px
 		color: white
 		text-align: center
@@ -314,17 +321,17 @@ b, strong
 		color: #777777
 		font-size: 15px
 	&-block
-		margin-bottom: 1rem
+		margin-bottom: 30px
 	&__subtitle
 		font-weight: normal
 		font-size: 16px
 		margin-bottom: 0
 	&__text
 		font-size: 24px
-		color: $text
+		color: #444444
 .card-price-window
 	display: flex
-	margin-top: 15px
+	margin-top: 35px
 	justify-content: center
 	align-items: center
 	border: 1px solid #4285F4
@@ -336,7 +343,7 @@ b, strong
 		margin-bottom: 0
 .card-price__button
 	position: absolute
-	bottom: 20px
+	bottom: 30px
 	left: 50%
 	transform: translateX(-50%)
 	display: flex
@@ -383,7 +390,6 @@ b, strong
 		transform: translateX(-50%)
 		justify-content: center
 .faq
-	margin-top: 30px
 	&-arrow
 		&--rotate
 			transform: rotateX(180deg)
@@ -462,6 +468,9 @@ b, strong
 		margin-left: 5px
 		font-size: 14px
 
+.check
+	&-text
+		font-size: 22px
 .telegram
 	margin-left: 0
 
