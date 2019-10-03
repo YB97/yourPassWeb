@@ -36,7 +36,7 @@
 
 
   <!-- Custom HTML -->
-  <header class="header">
+  <header id="header" class="header">
     <div class="overlay"></div>
     <nav class="nav">
       <div class="logo">
@@ -49,22 +49,24 @@
       </div>
       <ul class="nav-list">
         <li>
-          Стоимость
+          <a href="#cost">Стоимость</a>
           <span class="nav-list__divider">/</span>
         </li>
         <li>
-          Необходимые документы
+          <a href="#documents">Необходимые документы</a>
           <span class="nav-list__divider">/</span>
         </li>
         <li>
-          Проверка пропуска
+          <a href="#check">Проверка пропуска</a>
           <span class="nav-list__divider">/</span>
         </li>
         <li>
-          Частые вопросы
+          <a href="#faq">Частые вопросы</a>
           <span class="nav-list__divider">/</span>
         </li>
-        <li>Контакты</li>
+        <li>
+          <a href="#contacts">Контакты</a>
+        </li>
       </ul>
     </nav>
     <div class="container">
@@ -84,7 +86,10 @@
         </div>
         <div class="col-xl-5 offset-xl-1 col-lg-6">
           <div class="header-form">
-            <form action="">
+            <form>
+              <input type="hidden" name="project_name" value="ВАШПРОПУСК">
+              <input type="hidden" name="admin_email" value="abaninsash@gmail.com">
+              <input type="hidden" name="form_subject" value="Заявка с главной">
               <div class="title header-form__title">
                 <h2>Отправить заявку</h2>
               </div>
@@ -121,19 +126,24 @@
       <div class="row">
         <div class="col-md-8 offset-md-2 col-12">
           <div class="header-form">
-            <form action="">
+            <form>
+              <input type="hidden" name="project_name" value="ВАШПРОПУСК">
+              <input type="hidden" name="admin_email" value="abaninsash@gmail.com">
+              <input type="hidden" name="form_subject" value="Заявка с главной">
               <div class="title header-form__title">
                 <h2>Отправить заявку</h2>
               </div>
               <span class="header-form__text">Наш менеджер свяжется с вами</span>
               <div class="header-form__input">
                 <label for="fio-input" class="input-label">Фамилия Имя Отчество
-                  <input type="text" required class="input" placeholder="Иванов Иван Иванович" id="fio-input" />
+                  <input name="FIO" type="text" required class="input" placeholder="Иванов Иван Иванович"
+                    id="fio-input" />
                 </label>
               </div>
               <div class="header-form__input">
                 <label for="phone-input" class="input-label">Номер телефона
-                  <input type="text" required value="7" class="input" placeholder="+7 800 555 35 35" id="phone-input" />
+                  <input name="Phone" type="text" required value="7" class="input" placeholder="+7 800 555 35 35"
+                    id="phone-input" />
                 </label>
               </div>
               <div class="header-form__button">
@@ -246,7 +256,7 @@
       </div>
     </div>
   </section>
-  <section class="cost">
+  <section id="cost" class="cost">
     <div class="container">
       <div class="title cost__title">
         <h2>Стоимость</h2>
@@ -284,8 +294,8 @@
                 </p>
               </div>
               <div class="card-price__button">
-                <button class="button" type="submit">
-                  Отправить заявку
+                <button class="button button--link" type="submit">
+                  <a href="#header">Отправить заявку</a>
                 </button>
               </div>
             </div>
@@ -311,8 +321,8 @@
                 <strong class="card-price__text">1 день</strong>
               </div>
               <div class="card-price__button">
-                <button class="button" type="submit">
-                  Отправить заявку
+                <button class="button button--link">
+                  <a href="#header">Отправить заявку</a>
                 </button>
               </div>
             </div>
@@ -321,7 +331,7 @@
       </div>
     </div>
   </section>
-  <section class="documents">
+  <section id="documents" class="documents">
     <div class="container">
       <div class="title">
         <h2>Какие документы нам нужны</h2>
@@ -402,16 +412,21 @@
           <span>
             Временный пропуск на 5 дней сделаем за 1 день!</span>
         </div>
-        <div class="order-form__input">
+        <form class="order-form__input">
+          <input type="hidden" name="project_name" value="ВАШПРОПУСК">
+          <input type="hidden" name="admin_email" value="abaninsash@gmail.com">
+          <input type="hidden" name="form_subject" value="Заявка на временный пропуск">
           <div class="row order-form__wrapper">
             <div class="col-lg-4 col-md-6">
               <label for="order-fio-input" class="input-label input-label--white">Фамилия Имя Отчество
-                <input type="text" required class="input" placeholder="Иванов Иван Иванович" id="order-fio-input" />
+                <input type="text" required name="FIO" class="input" placeholder="Иванов Иван Иванович"
+                  id="order-fio-input" />
               </label>
             </div>
             <div class="col-lg-4 col-md-6">
               <label for="order-phone-input" class="input-label order-phone-input--mt input-label--white">Номер телефона
-                <input type="text" required class="input" value="7" placeholder="+7 800 555 35 35" id="order-phone-input" />
+                <input type="text" required name="Phone" class="input" value="7" placeholder="+7 800 555 35 35"
+                  id="order-phone-input" />
               </label>
             </div>
             <div class="col-lg-4 col-md-5 col-sm-8 col-11">
@@ -428,11 +443,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </section>
-  <section class="check">
+  <section id="check" class="check">
     <div class="container">
       <div class="title">
         <h2>Проверьте свой пропуск</h2>
@@ -464,8 +479,8 @@
               5 000 руб
             </div>
             <div class="service__button">
-              <button class="button button--white" type="submit">
-                Отправить заявку
+              <button class="button button--link button--white" type="submit">
+                <a href="#header">Отправить заявку</a>
               </button>
             </div>
           </div>
@@ -485,8 +500,8 @@
               5 000 руб
             </div>
             <div class="service__button">
-              <button class="button button--white" type="submit">
-                Отправить заявку
+              <button class="button button--link button--white" type="submit">
+                <a href="#header">Отправить заявку</a>
               </button>
             </div>
           </div>
@@ -502,8 +517,8 @@
               5 000 руб
             </div>
             <div class="service__button">
-              <button class="button button--white" type="submit">
-                Отправить заявку
+              <button class="button button--link button--white" type="submit">
+                <a href="#header">Отправить заявку</a>
               </button>
             </div>
           </div>
@@ -511,7 +526,7 @@
       </div>
     </div>
   </section>
-  <section class="faq">
+  <section id="faq" class="faq">
     <div class="container">
       <div class="title">
         <h2>Основные вопросы</h2>
@@ -620,14 +635,21 @@
           <h2 class="request__title">Отправьте заявку</h2>
         </div>
         <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
-          <form action="">
+          <form>
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="ВАШПРОПУСК">
+            <input type="hidden" name="admin_email" value="abaninsash@gmail.com">
+            <input type="hidden" name="form_subject" value="Заявка с нижней формы">
+            <!-- END Hidden Required Fields -->
             <label for="request-phone" class="input-label input-label--white request__input">
               Фамилия Имя Отчество
-              <input required type="text" class="input" placeholder="Иванов Иван Иванович" id="request-phone" />
+              <input required type="text" name="FIO" class="input" placeholder="Иванов Иван Иванович"
+                id="request-phone" />
             </label>
             <label for="request-phone-num" class="input-label input-label--white request__input">
               Номер телефона
-              <input required type="text" class="input" value="7" placeholder="+7 800 555 35 35" id="request-phone-num" />
+              <input required type="text" name="Phone" class="input" value="7" placeholder="+7 800 555 35 35"
+                id="request-phone-num" />
             </label>
             <div class="request__button">
               <button class="button button--white" type="submit">
@@ -646,7 +668,7 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
+  <footer id="contacts" class="footer">
     <div class="container">
       <div class="row">
         <div class="footer__wrapper">

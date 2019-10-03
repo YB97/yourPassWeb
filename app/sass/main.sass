@@ -138,17 +138,29 @@ b, strong
 .button
 	background-color: $accent
 	padding: 21px 40px
+	position: relative
 	border-radius: 5px
 	border: none
 	outline: none
 	color: #ffffff
 	cursor: pointer
 	white-space: nowrap
+	text-decoration: none
 	transition: background-color .15s ease-in-out
+	a
+		color: white
+		padding: 21px 40px
+		display: block
+		height: 100%
+		width: 100%
+		&:hover
+			text-decoration: none
 	&:hover
 		background-color: darken($accent, 10)
 	&:focus
 		outline: none
+	&--link
+		padding: 0
 	&--white
 		background-color: transparent
 		color: white
@@ -215,7 +227,7 @@ b, strong
 		flex-direction: row
 		margin: 0
 		padding: 0
-		li
+		a
 			cursor: pointer
 			transition: color .15s ease-in-out
 			color: #DCDCDC
