@@ -136,6 +136,7 @@ b, strong
 		box-shadow: 0 0 5px rgba($accent,0.5)
 
 .button
+	display: inline-block
 	background-color: $accent
 	padding: 21px 40px
 	position: relative
@@ -156,11 +157,11 @@ b, strong
 		&:hover
 			text-decoration: none
 	&:hover
+		text-decoration: none
+		color: white
 		background-color: darken($accent, 10)
 	&:focus
 		outline: none
-	&--link
-		padding: 0
 	&--white
 		background-color: transparent
 		color: white
