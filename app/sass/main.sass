@@ -10,6 +10,7 @@
 	color: #fff
 	body
 		font-size: 16px
+		background: #E5E5E5
 		min-width: 320px
 		position: relative
 		line-height: 1.65
@@ -71,11 +72,11 @@ b, strong
 	margin-bottom: 60px
 
 .logo
+	display: inline-block
 	color: #ffffff
 	text-transform: uppercase
 	font-size: 26px
 	font-weight: bold
-	margin-left: 50px
 
 .overlay
 	background-color: rgba(0, 0, 0, .5)
@@ -92,11 +93,14 @@ b, strong
 	position: relative
 
 .header
+	display: flex
+	align-items: center
+	justify-content: center
 	position: relative
 	background: url('../img/@1x/background-img.jpg') center no-repeat
 	height: 100vh
 	background-size: cover
-	min-height: 100vh
+	min-height: 700px
 	&-form
 		display: block
 		margin-top: 40px
@@ -154,6 +158,9 @@ b, strong
 			background-color: transparent
 			border-color: white
 
+.warning-icon
+	font-family: fontawesome
+	font-style: normal
 .warning-text
 	font-size: 12px
 	display: inline-block
@@ -163,29 +170,57 @@ b, strong
 	&--white-abs
 		color: white
 		position: absolute
-		right: 0
+		left: 0
+		bottom: 0
+		transform: translateY(110%)
+.hamburger
+	position: absolute
+	top: 10px
+	right: 5px
+	display: none
+	color: white
+	background: transparent
+.hamburger-inner
+	background: white
+	&::before, &::after
+		background: white
 
+.is-active
+	.hamburger-inner
+		background: white !important
+		&::before, &::after
+			background: white !important
+.darken
+	background-color: rgba(0, 0, 0, 0.95) !important
+	position: absolute !important
+	z-index: 10
+.d-center
+	display: flex
+	align-items: center !important
+	justify-content: center !important
 .nav
+	position: absolute
+	top: 0
+	padding: 20px 0px
 	background-color: rgba(0, 0, 0, 0.8)
-	height: 80px
 	width: 100%
 	display: flex
 	align-items: center
-	justify-content: space-between
+	justify-content: space-around
 	&-list
 		color: #ffffff
 		margin-right: 50px
-		ul
-			list-style-type: none
-			display: flex
-			flex-direction: row
-			margin: 0
-			li
-				cursor: pointer
-				transition: color .15s ease-in-out
-				color: #DCDCDC
-				&:hover
-					color: white
+		list-style-type: none
+		display: flex
+		flex-direction: row
+		margin: 0
+		padding: 0
+		li
+			cursor: pointer
+			transition: color .15s ease-in-out
+			color: #DCDCDC
+			&:hover
+				color: white
 		&__divider
 			color: $accent
 			font-weight: bold
@@ -195,7 +230,6 @@ b, strong
 .header-item
 	display: flex
 	align-items: center
-	height: 80vh
 	&__text
 		color: #ffffff
 		white-space: pre-line
@@ -232,16 +266,17 @@ b, strong
 
 .documents
 	&__item
+		margin-bottom: 20px
+	&__wrapper
 		display: flex
 		flex-direction: column
-	&__wrapper
 		position: relative
 		min-height: 160px
 	&-wrapper
 		position: absolute
 		left: 50%
 		transform: translateX(-50%) translateY(-50%)
-		top: 50px
+		top: 50%
 	&__text
 		display: block
 		font-size: 18px
@@ -337,7 +372,7 @@ b, strong
 	border: 1px solid #4285F4
 	box-sizing: border-box
 	border-radius: 5px
-	width: 320px
+	width: 80%
 	padding: 20px
 	&__text
 		margin-bottom: 0
@@ -429,11 +464,12 @@ b, strong
 		width: 100%
 	&__button
 		margin-top: 25px
+		width: 50%
 
 .footer
 	display: block
+	padding-bottom: 30px
 	background-color: #1B264E
-	height: 135px
 	&__wrapper
 		display: flex
 		width: 100%
@@ -441,8 +477,8 @@ b, strong
 		justify-content: space-between
 		&-contacts
 			display: flex
-			align-items: center
-			right: 0
+			margin-top: 15px
+			align-items: flex-start
 	&__wrapper-logo
 		display: flex
 		flex-direction: column
@@ -463,6 +499,7 @@ b, strong
 			margin-left: 0
 		&-wrapper
 			display: flex
+			flex-wrap: wrap
 			margin-top: 15px
 	&__text
 		margin-left: 5px
@@ -477,6 +514,11 @@ b, strong
 .phone
 	color: #ffffff
 	font-size: 36px
+.faq-item
+	cursor: pointer
+.faq-arrow
+	font-family: fontawesome
+	cursor: pointer
 .faq-content
 	display: none
 	padding: 30px 0px 20px 10px
@@ -485,5 +527,11 @@ b, strong
 		font-size: 17px
 .demo
 	height: 400px
+.form-md
+	margin-top: 0
+	.header-form
+		display: none
+		margin-top: 20px
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.28)
 
-	@import "media" // Always at the end
+@import "media" // Always at the end
